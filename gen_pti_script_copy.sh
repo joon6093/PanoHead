@@ -13,7 +13,7 @@ do
 
     do 
         # perform the pti and save w
-        python projector_withseg.py --outdir=${out} --target_img=dataset/3DDFA_img --network ${in}/${model} --idx ${i} --shapes True
+        python projector_withseg.py --outdir=${out} --target_img=dataset/3DDFA_img_korean --network ${in}/${model} --idx ${i} --shapes True
         # generate .mp4 before finetune
         # python gen_videos_proj_withseg.py --output=${out}/${model}/${i}/PTI_render/pre.mp4 --latent=${out}/${model}/${i}/projected_w.npz --trunc 0.7 --network ${in}/${model} --cfg Head --shapes True
         # generate .mp4 after finetune
