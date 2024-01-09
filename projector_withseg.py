@@ -266,7 +266,7 @@ def project_pti(
 @click.option('--target_img', 'target_img',       help='Target image folder', required=True, metavar='FILE|DIR')
 @click.option('--target_seg', 'target_seg',       help='Target segmentation folder', required=False, metavar='FILE|DIR')
 @click.option('--idx',                    help='index from dataset', type=int, default=0,  metavar='FILE|DIR')
-@click.option('--num-steps',              help='Number of optimization steps', type=int, default=500, show_default=True)
+@click.option('--num-steps',              help='Number of optimization steps', type=int, default=1000, show_default=True)
 @click.option('--num-steps-pti',          help='Number of optimization steps for pivot tuning', type=int, default=500, show_default=True)
 @click.option('--seed',                   help='Random seed', type=int, default=666, show_default=True)
 @click.option('--save-video',             help='Save an mp4 video of optimization progress', type=bool, default=True, show_default=True)

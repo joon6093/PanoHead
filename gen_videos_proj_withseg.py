@@ -238,7 +238,7 @@ def parse_tuple(s: Union[str, Tuple[int,int]]) -> Tuple[int, int]:
 @click.option('--output', help='Output path', type=str, required=True)
 @click.option('--grid', type=parse_tuple, help='Grid width/height, e.g. \'4x3\' (default: 1x1)', default=(1,1))
 @click.option('--num-keyframes', type=int, help='Number of seeds to interpolate through.  If not specified, determine based on the length of the seeds array given by --seeds.', default=None)
-@click.option('--w-frames', type=int, help='Number of frames to interpolate between latents', default=240)
+@click.option('--w-frames', type=int, help='Number of frames to interpolate between latents', default=480)
 @click.option('--trunc', 'truncation_psi', type=float, help='Truncation psi', default=1, show_default=True)
 @click.option('--trunc-cutoff', 'truncation_cutoff', type=int, help='Truncation cutoff', default=14, show_default=True)
 @click.option('--reload_modules', help='Overload persistent modules?', type=bool, required=False, metavar='BOOL', default=False, show_default=True)

@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 models=("easy-khair-180-gpc0.8-trans10-025000.pkl"\
-  "ablation-trigridD-1-025000.pkl")
+  "ablation-trigridD-1-025000.pkl"\
+  "baseline-easy-khair-025000.pkl")
 
 in="models"
 out="pti_out"
